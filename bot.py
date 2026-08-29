@@ -80,7 +80,9 @@ async def clear(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
 
 
-app = Application.builder().token("8996548170:AAGb4pHtpR9C6grfLPQ8t548Xdcwxr8vEz8").build()
+TOKEN = os.getenv("8996548170:AAEwBan6A6KmjG7X06nso8VBGACDWeWy5Cg")
+
+app = Application.builder().token(TOKEN).build()
 
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("add", add))
