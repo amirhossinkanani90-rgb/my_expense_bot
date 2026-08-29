@@ -1,0 +1,1 @@
+CreateObject("WScript.Shell").Run "python C:\Users\arm\Desktop\telegram_bot\bot.py", 0, False
